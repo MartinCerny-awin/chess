@@ -1,7 +1,10 @@
 import game from './game';
 
-describe('A tennis game', () => {
-  it('should return initial score', () => {
-    expect(game.getScore()).toEqual('0-0');
+describe('A simplified chess game', () => {
+  it('should set up pawns on their initial positions correctly', () => {
+    const board = game.getBoard();
+
+    expect(board[1][0]).toEqual({ type: 'Pawn', player: 1 });
+    expect(board[6][0]).toEqual({ type: 'Pawn', player: 2 });
   });
 });
