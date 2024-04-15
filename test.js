@@ -1,4 +1,4 @@
-import game from './game';
+const game = require('./game');
 
 describe('A simplified chess game', () => {
   it('should set up pawns on their initial positions correctly', () => {
